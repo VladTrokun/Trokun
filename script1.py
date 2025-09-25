@@ -14,7 +14,7 @@ words = sorted([el for el in a if isinstance(el, str)])
 sorted_list = nums + words
 # об’єднуємо числа і слова в один список
 
-even_list = [n for n in nums if n % 2 == 0]
+pair_list = [n for n in nums if n % 2 == 0]
 # створюємо список лише з парних чисел (перевірка n % 2 == 0)
 
 caps_list = [w.upper() for w in words]
@@ -26,7 +26,7 @@ print("Перший список:", a)
 print("Відсортований список:", sorted_list)
 # виводимо об’єднаний список з відсортованих чисел та слів
 
-print("Парні числа:", even_list)
+print("Парні числа:", pair_list)
 # виводимо список парних чисел
 
 print("Капс:", caps_list)

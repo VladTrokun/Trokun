@@ -1,14 +1,14 @@
-a = [21, 2, 31, 42, 53, 67, 72, 18, 93, 11,    
+main_list = [21, 2, 31, 42, 53, 67, 72, 18, 93, 11,    
      'яблуко', 'вишня', 'груша', 'апельсин',
      'слива', 'виноград', 'ананас', 'ківі',
      'манго', 'персик']
 # створюємо список, що містить числа та слова
 
-nums = sorted([el for el in a if isinstance(el, int)])
+nums = sorted([el for el in main_list if isinstance(el, int)])
 # створюємо список тільки з чисел (перевіряємо тип через isinstance),
 # сортуємо їх за зростанням
 
-words = sorted([el for el in a if isinstance(el, str)])
+words = sorted([el for el in main_list if isinstance(el, str)])
 # створюємо список тільки зі слів (рядків), сортуємо їх за алфавітом
 
 sorted_list = nums + words
@@ -20,7 +20,7 @@ pair_list = [n for n in nums if n % 2 == 0]
 caps_list = [w.upper() for w in words]
 # створюємо список зі слів, переведених у ВЕЛИКІ літери
 
-print("Перший список:", a)
+print("Перший список:", main_list)
 # виводимо початковий список
 
 print("Відсортований список:", sorted_list)

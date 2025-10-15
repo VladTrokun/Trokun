@@ -24,7 +24,7 @@ print("Середній бал:", round(sum(results.values()) / len(results), 2)
 exelent = [n for n in results if 10 <= results[n] <= 12]  # Відмінники
 good = [n for n in results if 7 <= results[n] <= 9]       # Хорошисти
 weak = [n for n in results if 4 <= results[n] <= 6]       # Відстаючі
-fail = [n for n in results if 1 <= results[n] <= 3]       # Не здали енемте
+fail = [n for n in results if 1 <= results[n] <= 3]       # Не здали 
 # Виводимо кількість і список студентів у кожній категорії
 print("Відмінники:", len(exelent), "→", ', '.join(exelent))
 print("Хорошисти:", len(good))

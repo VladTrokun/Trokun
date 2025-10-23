@@ -18,11 +18,12 @@ def calculate_price(order):
 
 # функція, яка перевіряє наявність товарів
 def check_availability(order):
-    available = True                    # припускаємо, що все є в наявності
-    for item in order:                  # перебираємо всі товари у замовленні
-        if not store[item][1]:          # якщо хоч одного товару немає
-            available = False           # тоді ставимо False (нема в наявності)
-    return available                    # повертаємо результат (True або False)
+    for item in order:
+        if item in store:
+            available = store[item][1]   # True або False
+            print(f"{item} — {available}")
+        else:
+            print(f"{item} — немає такого товару")
 
 # головна функція програми
 def main():
